@@ -1,0 +1,55 @@
+---
+title: "Title Slide"
+author: "Matteo Courthoud"
+date: 2021-10-29
+output: 
+  ioslides_presentation:
+    widescreen: true
+    smaller: true
+    transition: 0
+    slide_level: 3
+    css: custom.css
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## Section Slide
+
+### Slide with Bullets
+
+- Bullet 1
+- Bullet 2
+  - Sub bullet 1
+  - Sub bullet 1
+- Bullet 3
+
+### Slide with Code
+
+This is some code with a print below. 
+
+```{r code, echo = TRUE}
+for (i in 1:3) {
+  print(paste("i = ", i))
+}
+```
+
+### Slide with Table
+
+This is a table.
+
+```{r cars, echo = TRUE}
+library(knitr)
+
+kable(summary(cars))
+```
+
+### Slide with Plot
+
+This is a plot.
+
+```{r pressure}
+plot(pressure)
+```
+

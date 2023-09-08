@@ -40,7 +40,7 @@ bsgc = bestselling_consoles %>%
 
 # Dataset (sistemato) sulle vendite delle console
 console_sales = left_join(bestselling_consoles, bsgc) %>%
-  select(console:company, release_year, discontinuation_year, units_sold_mln)
+  select(console, type, release_year, discontinuation_year, units_sold_mln)
 
 
 # vgs1 e vgs2 servono per "costruire" vg_esclusive e vg_multiplatform
@@ -299,7 +299,7 @@ Dai grafici ottenuti abbiamo ricavato i seguenti risultati:
 
 - Le home console sono le più vendute.
 - Solamente in Giappone si registra un trend di vendite di videogiochi, in base al genere, diverso dal resto del mondo.
-- Una relazione tra le vendite di console e di videogiochi esiste e ha un andamento lineare. 
+- Una relazione tra le vendite di console e di videogiochi esiste e ha una tendenza crescente. 
 - Dal 1980 al 2016 le vendite mediane dei videogiochi multi-piattaforma si sono sempre più pareggiate a quelle dei titoli esclusivi, mantenendo, però, il vantaggio su questi ultimi.
 
 # Fine
